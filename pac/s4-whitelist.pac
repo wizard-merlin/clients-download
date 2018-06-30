@@ -2,7 +2,7 @@
 //
 // https://github.com/txthinking/pac
 //
-var proxy="HTTPS s1.wizardmerlin.me:3130";
+var proxy="HTTPS s4.wizardmerlin.me:3130";
 
 
 var wl = {

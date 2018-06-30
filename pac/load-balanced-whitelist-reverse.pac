@@ -13,9 +13,9 @@ var mySeg = parseInt(ipBits[3]);
 
 // Modulo % 2
 if((mySeg % 2) == 1) {
-		proxy = "HTTPS s7.wizardmerlin.me:3130; HTTPS s1.wizardmerlin.me:3130";
+		proxy = "HTTPS s7.wizardmerlin.me:3130; HTTPS s4.wizardmerlin.me:3130";
 } else {
-		proxy = "HTTPS s1.wizardmerlin.me:3130; HTTPS s7.wizardmerlin.me:3130";
+		proxy = "HTTPS s4.wizardmerlin.me:3130; HTTPS s7.wizardmerlin.me:3130";
 }
 
 var wl = {

@@ -12,10 +12,14 @@ var ipBits = myIp.split(".");
 var mySeg = parseInt(ipBits[3]);
 
 // Modulo % 2
-if((mySeg % 2) == 0) {
-		proxy = "HTTPS s7.wizardmerlin.me:3130; HTTPS s4.wizardmerlin.me:3130";
+if((mySeg % 4) == 0) {
+		proxy = "HTTPS s7.wizardmerlin.me:3130; HTTPS s4.wizardmerlin.me:3130; HTTPS s5.wizardmerlin.me:3130; HTTPS s9.wizardmerlin.me:3130";
+} else if((mySeg % 4) == 1) {
+		proxy = "HTTPS s4.wizardmerlin.me:3130; HTTPS s5.wizardmerlin.me:3130; HTTPS s9.wizardmerlin.me:3130; HTTPS s7.wizardmerlin.me:3130";
+} else if((mySeg % 4) == 2) {
+		proxy = "HTTPS s5.wizardmerlin.me:3130; HTTPS s9.wizardmerlin.me:3130; HTTPS s7.wizardmerlin.me:3130; HTTPS s4.wizardmerlin.me:3130";
 } else {
-		proxy = "HTTPS s4.wizardmerlin.me:3130; HTTPS s7.wizardmerlin.me:3130";
+		proxy = "HTTPS s9.wizardmerlin.me:3130; HTTPS s7.wizardmerlin.me:3130; HTTPS s4.wizardmerlin.me:3130; HTTPS s5.wizardmerlin.me:3130";
 }
 
 var wl = {
